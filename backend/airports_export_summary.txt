@@ -1,0 +1,148 @@
+EXPORT SUMMARY - TABLE: airports
+==================================================
+Export Date: 2025-11-15T18:44:33.572063
+Total Rows: 3956
+Columns: id, iata_code, icao_code, name, city, country, latitude, longitude, timezone, search_field, created_at, updated_at
+
+SAMPLE DATA (first 10 rows):
+----------------------------------------
+Row 1:
+  id: 1
+  iata_code: AAA
+  icao_code: None
+  name: Anaa Airport
+  city: Anaa
+  country: French Polynesia
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Anaa, French Polynesia (Anaa - AAA)
+  created_at: None
+  updated_at: None
+
+Row 2:
+  id: 2
+  iata_code: AAD
+  icao_code: None
+  name: Adado Airport
+  city: Adado
+  country: Somalia
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Adado, Somalia (Adado Airport - AAD)
+  created_at: None
+  updated_at: None
+
+Row 3:
+  id: 3
+  iata_code: AAE
+  icao_code: None
+  name: Annaba Airport
+  city: Annaba
+  country: Algeria
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Annaba, Algeria (Annaba - AAE)
+  created_at: None
+  updated_at: None
+
+Row 4:
+  id: 4
+  iata_code: AAK
+  icao_code: None
+  name: Aranuka Airport
+  city: Aranuka
+  country: Kiribati
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Aranuka, Kiribati (Aranuka Airport - AAK)
+  created_at: None
+  updated_at: None
+
+Row 5:
+  id: 5
+  iata_code: AAL
+  icao_code: None
+  name: Aalborg Airport
+  city: Aalborg
+  country: Denmark
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Aalborg, Denmark (Aalborg - AAL)
+  created_at: None
+  updated_at: None
+
+Row 6:
+  id: 6
+  iata_code: AAM
+  icao_code: None
+  name: Mala Mala Airport
+  city: Mala Mala
+  country: South Africa
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Mala Mala, South Africa (Mala Mala Airport - AAM)
+  created_at: None
+  updated_at: None
+
+Row 7:
+  id: 7
+  iata_code: AAN
+  icao_code: None
+  name: Al Ain Airport
+  city: Al Ain
+  country: United Arab Emirates
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Al Ain, United Arab Emirates (Al Ain - AAN)
+  created_at: None
+  updated_at: None
+
+Row 8:
+  id: 8
+  iata_code: AAP
+  icao_code: None
+  name: Samarinda Airport
+  city: Samarinda
+  country: Indonesia
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Samarinda, Indonesia (Ap Tumenggung Pranoto - AAP)
+  created_at: None
+  updated_at: None
+
+Row 9:
+  id: 9
+  iata_code: AAR
+  icao_code: None
+  name: Aarhus Airport
+  city: Aarhus
+  country: Denmark
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Aarhus, Denmark (Aarhus - AAR)
+  created_at: None
+  updated_at: None
+
+Row 10:
+  id: 10
+  iata_code: AAT
+  icao_code: None
+  name: Altay Airport
+  city: Altay
+  country: China
+  latitude: None
+  longitude: None
+  timezone: None
+  search_field: Altay, China (Altay - AAT)
+  created_at: None
+  updated_at: None
+

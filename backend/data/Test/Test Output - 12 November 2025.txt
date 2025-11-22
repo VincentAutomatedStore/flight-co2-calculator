@@ -1,0 +1,28 @@
+� Getting calculation history (simple method)...
+✅ Found 5 calculations
+127.0.0.1 - - [12/Nov/2025 17:19:19] "GET /api/v2/automation/status HTTP/1.1" 200 -
+✅ Processed: YUL -> YYZ
+✅ Processed: YVR -> YYZ
+✅ Processed: YYC -> YYZ
+✅ Processed: YYJ -> YYZ
+✅ Processed: YYT -> YYZ
+� Successfully processed 5 results
+✅ Found 5 calculations in enhanced database
+127.0.0.1 - - [12/Nov/2025 17:19:19] "GET /api/v2/automation/results HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2025 17:20:31] "POST /api/v2/automation/trigger HTTP/1.1" 200 -
+� Getting calculation history (simple method)...
+✅ Found 10 calculations
+127.0.0.1 - - [12/Nov/2025 17:20:33] "GET /api/v2/automation/status HTTP/1.1" 200 -
+✅ Processed: ABJ -> NBO
+✅ Processed: AAR -> STN
+✅ Processed: AAR -> CPH
+✅ Processed: AAL -> AMS
+✅ Processed: AAL -> CPH
+✅ Processed: YUL -> YYZ
+✅ Processed: YVR -> YYZ
+✅ Processed: YYC -> YYZ
+✅ Processed: YYJ -> YYZ
+✅ Processed: YYT -> YYZ
+� Successfully processed 10 results
+✅ Found 10 calculations in enhanced database
+127.0.0.1 - - [12/Nov/2025 17:20:33] "GET /api/v2/automation/results HTTP/1.1" 200 -

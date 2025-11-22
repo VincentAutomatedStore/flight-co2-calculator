@@ -1,0 +1,8 @@
+Solution 2: Install Visual Studio Build Tools
+If you want to stick with Python 3.14:
+
+Download Visual Studio Build Tools: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022
+
+Install with "C++ build tools" workload
+
+Restart VS Code and try again

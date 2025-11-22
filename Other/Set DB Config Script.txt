@@ -1,0 +1,27 @@
+# Define the configuration
+$config = @{
+    database = @{
+        dialect = "mssql"
+        host = "VINCENT-PC\SQLEXPRESS"
+        port = 1433
+        username = $null
+        password = $null
+        database = "flight_calculator"
+        driver = "ODBC Driver 17 for SQL Server"
+    }
+} | ConvertTo-Json
+
+# Test the connection first
+Write-Host "Testing SQL Server connection..."
+$testResult = Invoke-RestMethod -Uri "http://localhost:8080/api/config/test-connection" -Method POST -Body $config -ContentType "application/json"
+$testResult
+
+# If test is successful, save the configuration
+if ($testResult.success) {
+    Write-Host "Connection test successful! Saving configuration..."
+    $saveResult = Invoke-RestMethod -Uri "http://localhost:8080/api/config" -Method POST -Body $config -ContentType "application/json"
+    $saveResult
+    Write-Host "? Configuration saved! Please restart your Flask app."
+} else {
+    Write-Host "? Connection test failed. Please check your SQL Server configuration."
+}

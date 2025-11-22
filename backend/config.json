@@ -1,0 +1,17 @@
+{
+    "database": {
+        "manual": {
+            "dialect": "sqlite",
+            "connection_string": "sqlite:///flight_calculator.db"
+        },
+        "automation": {
+            "dialect": "mssql",
+            "host": "localhost",
+            "port": 1433,
+            "username": null,
+            "password": null,
+            "database": "flight_calculator",
+            "driver": "ODBC Driver 17 for SQL Server"
+        }
+    }
+}

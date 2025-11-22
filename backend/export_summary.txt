@@ -1,0 +1,74 @@
+FLIGHT CALCULATIONS EXPORT SUMMARY
+==================================================
+Export Date: 2025-11-15T19:56:23.515922
+Total Rows Exported: 100
+Source Database: flight_calculator.db
+Target: SQL Server
+Columns: id, departure_airport_id, destination_airport_id, passengers, round_trip, cabin_class, distance_km, distance_miles, fuel_burn_kg, total_co2_kg, co2_per_passenger_kg, co2_tonnes, calculation_method, flight_info, created_at, created_by
+
+CABIN CLASS DISTRIBUTION:
+  economy: 100 calculations
+
+TRIP TYPE DISTRIBUTION:
+  Round Trip: 100 calculations
+
+DATE RANGE: 2025-11-15 17:51:16.021657 to 2025-11-15 17:55:29.954002
+PASSENGERS: Min=1, Max=1, Avg=1.0
+CO2 EMISSIONS: Min=56.0kg, Max=1346.0kg, Avg=367.1kg
+
+SAMPLE DATA (first 3 rows):
+--------------------------------------------------
+Row 1:
+  id: 1
+  departure_airport_id: 5
+  destination_airport_id: 636
+  passengers: 1
+  round_trip: 1
+  cabin_class: economy
+  distance_km: 474.0
+  distance_miles: 295.0
+  fuel_burn_kg: 24.0
+  total_co2_kg: 77.0
+  co2_per_passenger_kg: 77.0
+  co2_tonnes: 0.077
+  calculation_method: ICAO_API
+  flight_info: AAL to CPH - 474km (Round Trip) • Economy
+  created_at: 2025-11-15 17:51:16
+  created_by: None
+
+Row 2:
+  id: 2
+  departure_airport_id: 5
+  destination_airport_id: 127
+  passengers: 1
+  round_trip: 1
+  cabin_class: economy
+  distance_km: 1246.0
+  distance_miles: 774.0
+  fuel_burn_kg: 70.0
+  total_co2_kg: 223.0
+  co2_per_passenger_kg: 223.0
+  co2_tonnes: 0.223
+  calculation_method: ICAO_API
+  flight_info: AAL to AMS - 1246km (Round Trip) • Economy
+  created_at: 2025-11-15 17:51:18
+  created_by: None
+
+Row 3:
+  id: 3
+  departure_airport_id: 9
+  destination_airport_id: 636
+  passengers: 1
+  round_trip: 1
+  cabin_class: economy
+  distance_km: 292.0
+  distance_miles: 181.0
+  fuel_burn_kg: 18.0
+  total_co2_kg: 56.0
+  co2_per_passenger_kg: 56.0
+  co2_tonnes: 0.056
+  calculation_method: ICAO_API
+  flight_info: AAR to CPH - 292km (Round Trip) • Economy
+  created_at: 2025-11-15 17:51:20
+  created_by: None
+

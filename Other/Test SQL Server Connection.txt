@@ -1,0 +1,13 @@
+$sqlServerConfig = @{
+    database = @{
+        dialect = "mssql"
+        host = "localhost"  # or your server name
+        port = 1433
+        username = ""  # your_username or leave null for Windows auth
+        password = ""  # your_password or leave null for Windows auth
+        database = "flight_calculator"
+        driver = "ODBC Driver 17 for SQL Server"
+    }
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "http://localhost:8080/api/config/test-connection" -Method POST -Body $sqlServerConfig -ContentType "application/json"

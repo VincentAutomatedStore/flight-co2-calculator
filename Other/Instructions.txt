@@ -1,0 +1,103 @@
+Install python - (Python 3.12.7 - Oct. 1, 2024):
+
+https://www.python.org/downloads/windows/
+
+Set the environment variable:
+
+python -m venv venv
+
+Once python is installed execute this command in the "backend" directory:
+
+Install the application dependencies:
+
+py -m pip install -r requirements.txt
+
+OR
+
+python -m pip install -r requirements.txt
+
+If you get any errors, try installing them seperatly in this order:
+
+py -m pip install flask==2.3.3
+py -m pip install Flask-SQLAlchemy==3.0.5
+py -m pip install Flask-CORS==4.0.0
+py -m pip install python-dotenv==1.0.0
+py -m pip install requests==2.31.0
+py -m pip install schedule==1.2.0
+
+py -m pip install pandas --prefer-binary
+
+
+Once all is installed execute the backend with:
+
+python app.py
+
+Once the backend is running you will see:
+
+	D:\Other\flight-co2-calculator\backend>python app.py
+	✅ Configuration system available
+	✅ Configuration loaded from config.json
+	✅ Enhanced features are available
+	 * Serving Flask app 'app'
+	 * Debug mode: on
+	WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+	 * Running on http://127.0.0.1:8080
+	Press CTRL+C to quit
+	 * Restarting with stat
+	✅ Configuration system available
+	✅ Configuration loaded from config.json
+	✅ Enhanced features are available
+	 * Debugger is active!
+	 * Debugger PIN: 960-540-810
+	✅ Automation scheduler started successfully
+	✅ Automation scheduler started successfully
+
+
+Then change the directory to the frontend and execute with:
+
+npm run dev
+
+Once the frontend is running you will see:
+
+		(venv) D:\Other\flight-co2-calculator>cd frontend
+
+		(venv) D:\Other\flight-co2-calculator\frontend>npm run dev
+
+		> flight-co2-calculator@0.0.0 dev
+		> vite
+
+
+		  VITE v4.5.14  ready in 1611 ms
+
+		  ➜  Local:   http://localhost:5173/
+		  ➜  Network: use --host to expose
+		  ➜  press h to show help
+  
+  Open: "http://localhost:5173/" in your browser and everything should work.
+  
+
+If you get any errors on the frontend you can change the "localhost" in the "backend" (app.py) file to:
+
+	Stop both apps first then:
+
+		if __name__ == '__main__':
+			app.run(host='127.0.0.1', port=8080, debug=True)
+
+	and also change the "frontend" in the (vite.config.js) file to:
+
+		target: 'http://127.0.0.1:8080',
+
+Start both apps and test again.
+
+******************************************************************************************************
+
+Updated Instructions: 16 November 2025
+
+Morne must install the below in the backend and the frontend:
+
+pip install pandas openpyxl reportlab
+
+DUB - DOH
+DUB - DXB
+DUB - DUS
+
